@@ -1,0 +1,88 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* Fondo oscuro */
+  color: #e0e0e0; /* Texto claro */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1e1e1e; /* Fondo oscuro para el contenedor */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra más tenue */
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #ffffff; /* Texto blanco */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #333; /* Borde oscuro */
+  border-radius: 6px;
+  background-color: #2a2a2a; /* Fondo oscuro */
+  color: #e0e0e0; /* Texto claro */
+}
+
+input::placeholder {
+  color: #888; /* Color del texto de marcador */
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #0077ff; /* Azul brillante */
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #005fcc; /* Azul más oscuro */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #1e1e1e; /* Fondo oscuro */
+  padding: 15px; /* Aumenta el padding para hacer el cuadro más grande */
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Asegura que el contenido esté centrado verticalmente */
+  color: #e0e0e0; /* Texto claro */
+  min-height: 50px; /* Establece una altura mínima para evitar que se descuadre */
+}
+
+li button {
+  margin-left: 10px;
+  background-color: #ff5c5c; /* Rojo */
+  color: white;
+  flex-shrink: 0; /* Evita que los botones se reduzcan de tamaño */
+}
+
+li button:first-of-type {
+  background-color: #ffc107; /* Amarillo */
+  color: black;
+}
+
+li button:hover {
+  opacity: 0.9;
+}
